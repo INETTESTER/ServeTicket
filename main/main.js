@@ -10,6 +10,7 @@ import { getAllTicketV2 } from '../api/getAllTicketV2.js';
 import { Search_My_Ticket } from '../api/Search_My_Ticket.js';
 import { Report_MTTN } from '../api/Report_MTTN.js';
 import { Report } from '../api/Report.js';
+import { GETTicketByTicket_id } from '../api/GETTicketByTicket_id.js';
 
 
 
@@ -22,7 +23,8 @@ export default function () {    //เรียกใช้ API ใน export def
   //response = getAllTicketV2()
   //response = Search_My_Ticket()
   //response = Report_MTTN()
-  response = Report()
+  //response = Report()
+  //response = GETTicketByTicket_id()
   error_check(response);
   sleep(1)
 }
